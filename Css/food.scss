@@ -1,0 +1,128 @@
+$mainFont: 'Exo', sans-serif;
+
+body {
+    background: #f7f7f7;
+    margin: 0 auto;
+    font-family: $mainFont;
+
+    nav {
+        height: 60px;
+        background: #3a3a3a;
+        display: inline-block;
+        width: 100%;
+        line-height: 60px;
+
+        .brand {
+            float: left;
+            padding-left: 50px;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+        .navbar {
+            float: right;
+            padding-right: 20px;
+
+            .bars {
+               float: left;
+               width: 90px;
+               height: 60px;
+               text-align: center;
+
+                 &:hover {
+                    background: #686767;
+                }
+
+                a {
+                color: #fff;
+                text-decoration: none;
+                display: block;
+
+                    &:focus {
+                    background: #686767;
+                }
+                }
+            }
+
+            .search {
+                margin-left: 40px;
+                width: 60px;
+            }
+
+            
+        }
+    }
+
+    #hero {
+        background: url("../images/cover.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 600px;
+        width: 100%;
+        margin-top: -5px !important;
+
+        .content {
+            text-align: center;
+            vertical-align: center;
+            padding-top: 250px;
+
+            h1 {
+                font-size: 36px;
+            }
+
+        }
+    }
+
+    #recentRecipes {
+        min-height: 600px;
+
+        .recentRecipes {
+           margin: 70px 50px;
+           text-align: center;
+        }
+
+        figure {
+            float: right;
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            width: 150px;
+            margin: 20px 30px;
+        }
+
+        .side img {
+            height: 100px;
+            width: 150px;
+            margin: 50px 30px;
+        }
+
+        .innerSide img {
+            height: 150px;
+            width: 200px;
+            margin: 30px 30px;
+        }
+
+        .middle img {
+            height: 200px;
+            width: 250px;
+            margin: 5px 30px;
+        }
+    }
+
+    footer {
+        height: 40px;
+        width: 100%;
+        background: #000;
+        text-align: right;
+        line-height: 40px;
+        color: #fff;
+        font-size: 12px;
+        
+        p {
+            padding-right: 50px;
+        }
+    }
+}

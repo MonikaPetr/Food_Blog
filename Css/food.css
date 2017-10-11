@@ -1,3 +1,84 @@
-
+body {
+  background: #f7f7f7;
+  margin: 0 auto;
+  font-family: "Exo", sans-serif; }
+  body nav {
+    height: 60px;
+    background: #3a3a3a;
+    display: inline-block;
+    width: 100%;
+    line-height: 60px; }
+    body nav .brand {
+      float: left;
+      padding-left: 50px; }
+      body nav .brand a {
+        color: #fff;
+        text-decoration: none; }
+    body nav .navbar {
+      float: right;
+      padding-right: 20px; }
+      body nav .navbar .bars {
+        float: left;
+        width: 90px;
+        height: 60px;
+        text-align: center; }
+        body nav .navbar .bars:hover {
+          background: #686767; }
+        body nav .navbar .bars a {
+          color: #fff;
+          text-decoration: none;
+          display: block; }
+          body nav .navbar .bars a:focus {
+            background: #686767; }
+      body nav .navbar .search {
+        margin-left: 40px;
+        width: 60px; }
+  body #hero {
+    background: url("../images/cover.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    width: 100%;
+    margin-top: -5px !important; }
+    body #hero .content {
+      text-align: center;
+      vertical-align: center;
+      padding-top: 250px; }
+      body #hero .content h1 {
+        font-size: 36px; }
+  body #recentRecipes {
+    min-height: 600px; }
+    body #recentRecipes .recentRecipes {
+      margin: 70px 50px;
+      text-align: center; }
+    body #recentRecipes figure {
+      float: right;
+      display: flex;
+      justify-content: center;
+      height: 100px;
+      width: 150px;
+      margin: 20px 30px; }
+    body #recentRecipes .side img {
+      height: 100px;
+      width: 150px;
+      margin: 50px 30px; }
+    body #recentRecipes .innerSide img {
+      height: 150px;
+      width: 200px;
+      margin: 30px 30px; }
+    body #recentRecipes .middle img {
+      height: 200px;
+      width: 250px;
+      margin: 5px 30px; }
+  body footer {
+    height: 40px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    line-height: 40px;
+    color: #fff;
+    font-size: 12px; }
+    body footer p {
+      padding-right: 50px; }
 
 /*# sourceMappingURL=food.css.map */
