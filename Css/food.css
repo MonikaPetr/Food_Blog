@@ -47,29 +47,76 @@ body {
       body #hero .content h1 {
         font-size: 36px; }
   body #recentRecipes {
-    min-height: 600px; }
+    min-height: 400px; }
+    body #recentRecipes .title {
+      text-align: center;
+      font-size: 24px; }
     body #recentRecipes .recentRecipes {
-      margin: 70px 50px;
-      text-align: center; }
-    body #recentRecipes figure {
-      float: right;
-      display: flex;
-      justify-content: center;
-      height: 100px;
-      width: 150px;
-      margin: 20px 30px; }
-    body #recentRecipes .side img {
-      height: 100px;
-      width: 150px;
-      margin: 50px 30px; }
-    body #recentRecipes .innerSide img {
-      height: 150px;
-      width: 200px;
-      margin: 30px 30px; }
-    body #recentRecipes .middle img {
-      height: 200px;
+      margin: 0 auto;
+      text-align: center;
+      height: 400px;
+      vertical-align: middle;
+      display: inline-block; }
+    body #recentRecipes .middle {
       width: 250px;
-      margin: 5px 30px; }
+      height: 150px;
+      margin-top: 95px;
+      margin-left: 640px;
+      position: absolute; }
+    body #recentRecipes .innerSideLeft {
+      width: 200px;
+      height: 150px;
+      margin-top: 125px;
+      margin-left: 390px;
+      position: absolute; }
+    body #recentRecipes .innerSideRight {
+      width: 200px;
+      height: 150px;
+      margin-top: 125px;
+      margin-left: 941px;
+      position: absolute; }
+    body #recentRecipes .sideLeft {
+      width: 150px;
+      height: 300px;
+      margin-top: 150px;
+      margin-left: 190px;
+      position: absolute; }
+    body #recentRecipes .sideRight {
+      width: 150px;
+      height: 150px;
+      margin-top: 150px;
+      margin-left: 1191px;
+      position: absolute; }
+    body #recentRecipes .iconLeft {
+      width: 50px;
+      height: 50px;
+      margin-top: 180px;
+      margin-left: 50px;
+      position: absolute;
+      font-size: 34px; }
+    body #recentRecipes .iconRight {
+      width: 50px;
+      height: 50px;
+      margin-top: 180px;
+      margin-left: 1430px;
+      position: absolute;
+      font-size: 34px; }
+    body #recentRecipes .sideRight img, body #recentRecipes .sideLeft img {
+      height: 100px;
+      width: 152px;
+      margin: 0 auto;
+      border: 5px solid #4f4f4f;
+      border-radius: 5px; }
+    body #recentRecipes .innerSideRight img, body #recentRecipes .innerSideLeft img {
+      height: 140px;
+      width: 200px;
+      border: 5px solid #4f4f4f;
+      border-radius: 5px; }
+    body #recentRecipes .middle img {
+      height: 202px;
+      width: 250px;
+      border: 5px solid #4f4f4f;
+      border-radius: 5px; }
   body footer {
     height: 40px;
     width: 100%;

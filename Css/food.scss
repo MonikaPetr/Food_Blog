@@ -77,39 +77,105 @@ body {
     }
 
     #recentRecipes {
-        min-height: 600px;
+        min-height: 400px;
+
+        .title {
+            text-align: center;
+            font-size: 24px;
+        }
+        
 
         .recentRecipes {
-           margin: 70px 50px;
+           margin: 0 auto;
            text-align: center;
+           height: 400px;
+           vertical-align: middle;
+           display: inline-block;
         }
 
-        figure {
-            float: right;
-            display: flex;
-            justify-content: center;
-            height: 100px;
-            width: 150px;
-            margin: 20px 30px;
-        }
-
-        .side img {
-            height: 100px;
-            width: 150px;
-            margin: 50px 30px;
-        }
-
-        .innerSide img {
+        .middle {
+            width: 250px;
             height: 150px;
+            margin-top: 95px;
+            margin-left: 640px;
+            position: absolute;
+          
+        }
+
+        .innerSideLeft {
             width: 200px;
-            margin: 30px 30px;
+            height: 150px;
+            margin-top: 125px;
+            margin-left: 390px;
+            position: absolute;
+            
+        }
+
+        .innerSideRight {
+            width: 200px;
+            height: 150px;
+            margin-top: 125px;
+            margin-left: 941px;
+            position: absolute;
+            
+        }
+
+        .sideLeft {
+            width: 150px;
+            height: 300px;
+            margin-top: 150px;
+            margin-left: 190px;
+            position: absolute;
+        }
+
+         .sideRight {
+            width: 150px;
+            height: 150px;
+            margin-top: 150px;
+            margin-left: 1191px;
+            position: absolute;
+        }
+
+        .iconLeft {
+            width: 50px;
+            height: 50px;
+            margin-top: 180px;
+            margin-left: 50px;
+            position: absolute;
+            font-size: 34px;
+        }
+
+        .iconRight {
+            width: 50px;
+            height: 50px;
+            margin-top: 180px;
+            margin-left: 1430px;
+            position: absolute;
+            font-size: 34px;
+        }
+
+        .sideRight img, .sideLeft img {
+            height: 100px;
+            width: 152px;
+            margin: 0 auto;
+            border: 5px solid #4f4f4f;
+            border-radius: 5px;
+        }
+
+        .innerSideRight img, .innerSideLeft img {
+           height: 140px;
+            width: 200px;
+            border: 5px solid #4f4f4f;
+            border-radius: 5px;
         }
 
         .middle img {
-            height: 200px;
+            height: 202px;
             width: 250px;
-            margin: 5px 30px;
+            border: 5px solid #4f4f4f;
+            border-radius: 5px;
         }
+        
     }
 
     footer {
