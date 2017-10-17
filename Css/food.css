@@ -30,37 +30,55 @@ body {
           display: block; }
           body nav .navbar .bars a:focus {
             background: #686767; }
-          body nav .navbar .bars a .hide {
-            display: none;
-            width: 2px; }
-            body nav .navbar .bars a .hide:hover {
-              background: none; }
       body nav .navbar .inputBar {
         float: left;
         width: 2px;
         height: 60px;
         text-align: center;
-        display: none; }
+        display: none;
+        line-height: 60px; }
         body nav .navbar .inputBar input {
           width: 150px;
           height: 25px;
           background: #f7f7f7;
           border: none;
-          border-radius: 3px; }
-        body nav .navbar .inputBar input > .submit {
-          width: 50px;
-          height: 25px;
+          -webkit-border-top-left-radius: 3px;
+          -webkit-border-bottom-left-radius: 3px;
+          -moz-border-radius-topleft: 3px;
+          -moz-border-radius-bottomleft: 3px;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          padding-left: 20px;
+          line-height: 25px; }
+        body nav .navbar .inputBar button {
+          width: 25px;
+          height: 27px;
           background: #f7f7f7;
           border: none;
-          border-radius: 3px; }
+          -webkit-border-top-right-radius: 3px;
+          -webkit-border-bottom-right-radius: 3px;
+          -moz-border-radius-topright: 3px;
+          -moz-border-radius-bottomright: 3px;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px; }
       body nav .navbar .show {
         display: inline-block;
         width: 150px;
         padding-left: 30px;
-        padding-right: 30px; }
+        margin-right: 0; }
+      body nav .navbar .showButton {
+        display: inline-block;
+        width: 25px;
+        margin-right: 50px;
+        margin-left: 0; }
       body nav .navbar .search {
         margin-left: 40px;
         width: 60px; }
+      body nav .navbar .hide {
+        display: none;
+        width: 2px; }
+        body nav .navbar .hide:hover {
+          background: none; }
   body #hero {
     background: url("../images/cover.jpeg");
     background-size: cover;
@@ -146,14 +164,31 @@ body {
       border: 5px solid #4f4f4f;
       border-radius: 5px; }
   body footer {
+    position: fixed;
     height: 40px;
     width: 100%;
     background: #000;
     text-align: right;
-    line-height: 40px;
+    line-height: 25px;
     color: #fff;
-    font-size: 12px; }
+    font-size: 12px;
+    bottom: 0; }
     body footer p {
       padding-right: 50px; }
+  body .profile {
+    margin-top: 50px; }
+    body .profile .photo {
+      float: left;
+      width: 400px;
+      height: 500px;
+      overflow: hidden;
+      margin-right: 30px;
+      margin-left: 50px;
+      border-radius: 5px;
+      background: url("https://images.unsplash.com/photo-1485043433441-db091a258e5a?dpr=1&auto=format&fit=crop&w=1868&h=&q=60&cs=tinysrgb&crop=");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    body .profile .description {
+      margin-right: 50px; }
 
 /*# sourceMappingURL=food.css.map */

@@ -12,17 +12,17 @@
 <body>
     <nav>
         <div class="brand">
-            <a href="#">Food Blog</a>
+            <a href="food.html">Food Blog</a>
         </div>
         <div class="navbar">
-            <div class="bars"><a href="#">About Me</a></div>
+            <div class="bars"><a href="about_me.html">About Me</a></div>
             <div class="bars"><a href="#">BlogPosts</a></div>
             <div class="bars"><a href="#">Recipes</a></div>
             <div class="bars"><a href="#">Travel</a></div>
             <div class="bars"><a href="#">Contacts</a></div>
             <div class="inputBar" id="inputSpace"><input type="text" name="search" placeholder="Your search"></div>
-            <div class="inputBar" id="navSearch"><input class="submit" type="submit" name="submit" onclick="hideInput()"></div>
-            <div class="bars search"><a href="#" onclick="showInput()"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+            <div class="inputBar" id="navSearch"><button type="button" name="button" onclick="hideInput()">X</button></div>
+            <div class="bars search" id="startSearch"><a href="#" onclick="showInput()"><i class="fa fa-search" aria-hidden="true"></i></a></div>
         </div>
     </nav>
     <section id="hero">
