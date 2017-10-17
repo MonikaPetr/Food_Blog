@@ -20,7 +20,9 @@
             <div class="bars"><a href="#">Recipes</a></div>
             <div class="bars"><a href="#">Travel</a></div>
             <div class="bars"><a href="#">Contacts</a></div>
-            <div class="bars search"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+            <div class="inputBar" id="inputSpace"><input type="text" name="search" placeholder="Your search"></div>
+            <div class="inputBar" id="navSearch"><input class="submit" type="submit" name="submit" onclick="hideInput()"></div>
+            <div class="bars search"><a href="#" onclick="showInput()"><i class="fa fa-search" aria-hidden="true"></i></a></div>
         </div>
     </nav>
     <section id="hero">
@@ -62,4 +64,5 @@
     </footer>
     
 </body>
+<script type="text/javascript" src="./js/food.js"></script>
 </html>

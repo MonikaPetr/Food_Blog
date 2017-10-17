@@ -30,6 +30,34 @@ body {
           display: block; }
           body nav .navbar .bars a:focus {
             background: #686767; }
+          body nav .navbar .bars a .hide {
+            display: none;
+            width: 2px; }
+            body nav .navbar .bars a .hide:hover {
+              background: none; }
+      body nav .navbar .inputBar {
+        float: left;
+        width: 2px;
+        height: 60px;
+        text-align: center;
+        display: none; }
+        body nav .navbar .inputBar input {
+          width: 150px;
+          height: 25px;
+          background: #f7f7f7;
+          border: none;
+          border-radius: 3px; }
+        body nav .navbar .inputBar input > .submit {
+          width: 50px;
+          height: 25px;
+          background: #f7f7f7;
+          border: none;
+          border-radius: 3px; }
+      body nav .navbar .show {
+        display: inline-block;
+        width: 150px;
+        padding-left: 30px;
+        padding-right: 30px; }
       body nav .navbar .search {
         margin-left: 40px;
         width: 60px; }

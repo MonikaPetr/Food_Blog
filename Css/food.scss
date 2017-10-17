@@ -26,17 +26,19 @@ body {
             float: right;
             padding-right: 20px;
 
+        
+
             .bars {
                float: left;
                width: 90px;
                height: 60px;
                text-align: center;
-
+                
                  &:hover {
                     background: #686767;
                 }
 
-                a {
+             a {
                 color: #fff;
                 text-decoration: none;
                 display: block;
@@ -44,8 +46,51 @@ body {
                     &:focus {
                     background: #686767;
                 }
+
+                .hide {
+                    display: none;
+                    width: 2px;
+
+                    &:hover {
+                        background: none;
+                    }
+                }
                 }
             }
+
+            .inputBar {
+               float: left;
+               width: 2px;
+               height: 60px;
+               text-align: center;
+               display: none;
+
+               input {
+                    width: 150px;
+                    height: 25px;
+                    background: #f7f7f7;
+                    border: none;
+                    border-radius: 3px;
+                    
+                }
+
+                input > .submit {
+                    width: 50px;
+                    height: 25px;
+                    background: #f7f7f7;
+                    border: none;
+                    border-radius: 3px;
+                }
+
+               
+            }
+
+             .show {
+                    display: inline-block;
+                    width: 150px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
 
             .search {
                 margin-left: 40px;
