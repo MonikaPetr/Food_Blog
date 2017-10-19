@@ -1,5 +1,5 @@
 body {
-  background: #f7f7f7;
+  background: #e2e2e2;
   margin: 0 auto;
   font-family: "Exo", sans-serif; }
   body nav {
@@ -14,6 +14,9 @@ body {
       body nav .brand a {
         color: #fff;
         text-decoration: none; }
+      body nav .brand i {
+        font-size: 26px;
+        line-height: 60px; }
     body nav .navbar {
       float: right;
       padding-right: 20px; }
@@ -69,7 +72,7 @@ body {
       body nav .navbar .showButton {
         display: inline-block;
         width: 25px;
-        margin-right: 50px;
+        margin-right: 20px;
         margin-left: 0; }
       body nav .navbar .search {
         margin-left: 40px;
@@ -175,20 +178,53 @@ body {
     bottom: 0; }
     body footer p {
       padding-right: 50px; }
-  body .profile {
+  body .about_me {
+    background: #f2f2f2;
+    height: 900px;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border: 5px solid #4f4f4f;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 70px; }
+    body .about_me .profile {
+      margin-top: 50px; }
+      body .about_me .profile .photo {
+        float: left;
+        width: 400px;
+        height: 500px;
+        overflow: hidden;
+        margin-right: 30px;
+        margin-left: 30px;
+        border-radius: 3px;
+        border: 3px solid #918f8f;
+        background: url("https://images.unsplash.com/photo-1485043433441-db091a258e5a?dpr=1&auto=format&fit=crop&w=1868&h=&q=60&cs=tinysrgb&crop=");
+        background-repeat: no-repeat;
+        background-size: cover; }
+      body .about_me .profile .description {
+        margin-right: 30px; }
+  body .blogPosts {
+    width: 800px;
+    height: 630px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border: 5px solid #4f4f4f;
+    border-radius: 5px;
+    padding: 20px 30px;
+    background: #f2f2f2; }
+    body .blogPosts .picture img {
+      width: 600px;
+      height: 400px;
+      margin-left: 100px;
+      border-radius: 3px;
+      border: 3px solid #918f8f;
+      margin-bottom: 20px; }
+    body .blogPosts .title h1 {
+      margin-bottom: 40px; }
+    body .blogPosts .summarry a {
+      font-size: 14px; }
+  body .firstPost {
     margin-top: 50px; }
-    body .profile .photo {
-      float: left;
-      width: 400px;
-      height: 500px;
-      overflow: hidden;
-      margin-right: 30px;
-      margin-left: 50px;
-      border-radius: 5px;
-      background: url("https://images.unsplash.com/photo-1485043433441-db091a258e5a?dpr=1&auto=format&fit=crop&w=1868&h=&q=60&cs=tinysrgb&crop=");
-      background-repeat: no-repeat;
-      background-size: cover; }
-    body .profile .description {
-      margin-right: 50px; }
 
 /*# sourceMappingURL=food.css.map */
