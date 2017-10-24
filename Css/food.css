@@ -96,76 +96,75 @@ body {
       body #hero .content h1 {
         font-size: 36px; }
   body #recentRecipes {
-    min-height: 400px; }
+    min-height: 550px; }
     body #recentRecipes .title {
-      text-align: center;
-      font-size: 24px; }
+      text-align: left;
+      font-size: 24px;
+      margin-left: 80px; }
     body #recentRecipes .recentRecipes {
-      margin: 0 auto;
+      margin: 50px 60px;
       text-align: center;
-      height: 400px;
+      height: 350px;
+      overflow: hidden;
       vertical-align: middle;
-      display: inline-block; }
-    body #recentRecipes .middle {
-      width: 250px;
-      height: 150px;
-      margin-top: 95px;
-      margin-left: 640px;
-      position: absolute; }
-    body #recentRecipes .innerSideLeft {
-      width: 200px;
-      height: 150px;
-      margin-top: 125px;
-      margin-left: 390px;
-      position: absolute; }
-    body #recentRecipes .innerSideRight {
-      width: 200px;
-      height: 150px;
-      margin-top: 125px;
-      margin-left: 941px;
-      position: absolute; }
-    body #recentRecipes .sideLeft {
-      width: 150px;
-      height: 300px;
-      margin-top: 150px;
-      margin-left: 190px;
-      position: absolute; }
-    body #recentRecipes .sideRight {
-      width: 150px;
-      height: 150px;
-      margin-top: 150px;
-      margin-left: 1191px;
-      position: absolute; }
-    body #recentRecipes .iconLeft {
-      width: 50px;
-      height: 50px;
-      margin-top: 180px;
-      margin-left: 50px;
-      position: absolute;
-      font-size: 34px; }
-    body #recentRecipes .iconRight {
-      width: 50px;
-      height: 50px;
-      margin-top: 180px;
-      margin-left: 1430px;
-      position: absolute;
-      font-size: 34px; }
-    body #recentRecipes .sideRight img, body #recentRecipes .sideLeft img {
-      height: 100px;
-      width: 152px;
-      margin: 0 auto;
-      border: 5px solid #4f4f4f;
-      border-radius: 5px; }
-    body #recentRecipes .innerSideRight img, body #recentRecipes .innerSideLeft img {
-      height: 140px;
-      width: 200px;
-      border: 5px solid #4f4f4f;
-      border-radius: 5px; }
-    body #recentRecipes .middle img {
-      height: 202px;
-      width: 250px;
-      border: 5px solid #4f4f4f;
-      border-radius: 5px; }
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 30px;
+      z-index: 97; }
+      body #recentRecipes .recentRecipes .recentRecipe img {
+        width: 85%;
+        margin: 0;
+        z-index: 98;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-topright: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px; }
+      body #recentRecipes .recentRecipes .recipeCaption {
+        width: 240px;
+        position: absolute;
+        z-index: 99;
+        bottom: -379px;
+        left: 80px;
+        height: 80px;
+        vertical-align: middle;
+        background: rgba(104, 103, 103, 0.8);
+        -webkit-border-bottom-right-radius: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        -moz-border-radius-bottomright: 5px;
+        -moz-border-radius-bottomleft: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px; }
+        body #recentRecipes .recentRecipes .recipeCaption p {
+          text-align: center;
+          color: #fff;
+          font-size: 20px;
+          font-weight: bold; }
+      body #recentRecipes .recentRecipes .secCap {
+        left: 362px; }
+      body #recentRecipes .recentRecipes .thirdCap {
+        left: 642px;
+        width: 235px; }
+      body #recentRecipes .recentRecipes .fourCap {
+        left: 918px;
+        width: 239px; }
+      body #recentRecipes .recentRecipes .fiveCap {
+        left: 1199px; }
+      body #recentRecipes .recentRecipes .arrowLeft {
+        width: 50px;
+        height: 50px;
+        margin-top: 160px;
+        left: 20px;
+        position: absolute;
+        font-size: 34px; }
+      body #recentRecipes .recentRecipes .arrowRight {
+        width: 50px;
+        height: 50px;
+        margin-top: 160px;
+        right: 20px;
+        position: absolute;
+        font-size: 34px; }
   body footer {
     position: fixed;
     height: 40px;
@@ -179,13 +178,10 @@ body {
     body footer p {
       padding-right: 50px; }
   body .about_me {
-    background: #f2f2f2;
     height: 900px;
-    width: 800px;
+    width: 1300px;
     margin: 0 auto;
     padding: 10px 30px;
-    border: 5px solid #4f4f4f;
-    border-radius: 5px;
     margin-top: 30px;
     margin-bottom: 70px; }
     body .about_me .profile {
@@ -204,27 +200,66 @@ body {
         background-size: cover; }
       body .about_me .profile .description {
         margin-right: 30px; }
-  body .blogPosts {
-    width: 800px;
-    height: 630px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    border: 5px solid #4f4f4f;
-    border-radius: 5px;
-    padding: 20px 30px;
-    background: #f2f2f2; }
-    body .blogPosts .picture img {
+  body .posts {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 70px; }
+    body .posts .blogPosts {
       width: 600px;
-      height: 400px;
-      margin-left: 100px;
-      border-radius: 3px;
-      border: 3px solid #918f8f;
-      margin-bottom: 20px; }
-    body .blogPosts .title h1 {
-      margin-bottom: 40px; }
-    body .blogPosts .summarry a {
-      font-size: 14px; }
-  body .firstPost {
-    margin-top: 50px; }
+      height: 500px;
+      margin: 0 auto;
+      padding: 20px 30px; }
+      body .posts .blogPosts .picture img {
+        float: left;
+        width: 600px;
+        height: 400px;
+        margin-right: 20px;
+        z-index: 98;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-topright: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px; }
+      body .posts .blogPosts .summarry {
+        font-size: 14px;
+        width: 600px;
+        position: absolute;
+        z-index: 99;
+        top: 470px;
+        left: 115px;
+        height: 150px;
+        vertical-align: middle;
+        background: rgba(104, 103, 103, 0.7);
+        -webkit-border-bottom-right-radius: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        -moz-border-radius-bottomright: 5px;
+        -moz-border-radius-bottomleft: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px; }
+        body .posts .blogPosts .summarry p {
+          font-size: 14px;
+          font-weight: bold;
+          color: #ccccce;
+          padding: 10px 30px;
+          text-align: left; }
+        body .posts .blogPosts .summarry h1 {
+          font-size: 26px;
+          margin-bottom: 10px;
+          padding-left: 30px;
+          color: #fff; }
+        body .posts .blogPosts .summarry a {
+          font-size: 14px;
+          font-weight: bold;
+          color: #515151;
+          text-decoration: none; }
+      body .posts .blogPosts .secSum {
+        left: 805px; }
+      body .posts .blogPosts .thrdSum {
+        top: 1015px;
+        left: 115px; }
+      body .posts .blogPosts .fourSum {
+        top: 1015px;
+        left: 805px; }
 
 /*# sourceMappingURL=food.css.map */
