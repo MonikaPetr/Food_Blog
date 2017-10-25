@@ -99,35 +99,35 @@ body {
     min-height: 550px; }
     body #recentRecipes .title {
       text-align: left;
-      font-size: 24px;
       margin-left: 80px; }
+      body #recentRecipes .title h1 {
+        font-size: 38px; }
     body #recentRecipes .recentRecipes {
       margin: 50px 60px;
+      padding-right: 10px;
       text-align: center;
-      height: 350px;
+      height: 450px;
       overflow: hidden;
       vertical-align: middle;
       display: flex;
       flex-direction: row;
       margin-bottom: 30px;
       z-index: 97; }
+      body #recentRecipes .recentRecipes .recentRecipe {
+        margin: 0 15px; }
       body #recentRecipes .recentRecipes .recentRecipe img {
-        width: 85%;
+        width: 100%;
         margin: 0;
         z-index: 98;
-        -webkit-border-top-left-radius: 5px;
-        -webkit-border-top-right-radius: 5px;
-        -moz-border-radius-topleft: 5px;
-        -moz-border-radius-topright: 5px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px; }
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px; }
       body #recentRecipes .recentRecipes .recipeCaption {
-        width: 240px;
-        position: absolute;
+        top: -100px;
+        width: 100%;
+        height: 17%;
         z-index: 99;
-        bottom: -379px;
-        left: 80px;
-        height: 80px;
+        position: relative;
         vertical-align: middle;
         background: rgba(104, 103, 103, 0.8);
         -webkit-border-bottom-right-radius: 5px;
@@ -140,17 +140,8 @@ body {
           text-align: center;
           color: #fff;
           font-size: 20px;
-          font-weight: bold; }
-      body #recentRecipes .recentRecipes .secCap {
-        left: 362px; }
-      body #recentRecipes .recentRecipes .thirdCap {
-        left: 642px;
-        width: 235px; }
-      body #recentRecipes .recentRecipes .fourCap {
-        left: 918px;
-        width: 239px; }
-      body #recentRecipes .recentRecipes .fiveCap {
-        left: 1199px; }
+          font-weight: bold;
+          padding-top: 20px; }
       body #recentRecipes .recentRecipes .arrowLeft {
         width: 50px;
         height: 50px;
@@ -174,11 +165,12 @@ body {
     line-height: 25px;
     color: #fff;
     font-size: 12px;
-    bottom: 0; }
+    bottom: 0;
+    z-index: 100; }
     body footer p {
       padding-right: 50px; }
   body .about_me {
-    height: 900px;
+    height: 600px;
     width: 1300px;
     margin: 0 auto;
     padding: 10px 30px;
@@ -200,20 +192,23 @@ body {
         background-size: cover; }
       body .about_me .profile .description {
         margin-right: 30px; }
+  body .blog h1 {
+    margin-left: 80px;
+    margin-bottom: 50px;
+    font-size: 38px; }
   body .posts {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px 70px; }
+    margin: 20px 90px; }
     body .posts .blogPosts {
       width: 600px;
-      height: 500px;
+      height: 550px;
       margin: 0 auto;
-      padding: 20px 30px; }
-      body .posts .blogPosts .picture img {
-        float: left;
+      padding: 0px 10px;
+      margin-bottom: 20px; }
+      body .posts .blogPosts img {
         width: 600px;
         height: 400px;
-        margin-right: 20px;
         z-index: 98;
         -webkit-border-top-left-radius: 5px;
         -webkit-border-top-right-radius: 5px;
@@ -223,12 +218,11 @@ body {
         border-top-right-radius: 5px; }
       body .posts .blogPosts .summarry {
         font-size: 14px;
-        width: 600px;
-        position: absolute;
+        position: relative;
+        width: 100%;
+        height: 35%;
         z-index: 99;
-        top: 470px;
-        left: 115px;
-        height: 150px;
+        top: -100px;
         vertical-align: middle;
         background: rgba(104, 103, 103, 0.7);
         -webkit-border-bottom-right-radius: 5px;
@@ -241,25 +235,17 @@ body {
           font-size: 14px;
           font-weight: bold;
           color: #ccccce;
-          padding: 10px 30px;
+          padding: 30px 30px;
           text-align: left; }
-        body .posts .blogPosts .summarry h1 {
+        body .posts .blogPosts .summarry h2 {
           font-size: 26px;
-          margin-bottom: 10px;
           padding-left: 30px;
+          padding-top: 25px;
           color: #fff; }
         body .posts .blogPosts .summarry a {
           font-size: 14px;
           font-weight: bold;
           color: #515151;
           text-decoration: none; }
-      body .posts .blogPosts .secSum {
-        left: 805px; }
-      body .posts .blogPosts .thrdSum {
-        top: 1015px;
-        left: 115px; }
-      body .posts .blogPosts .fourSum {
-        top: 1015px;
-        left: 805px; }
 
 /*# sourceMappingURL=food.css.map */
