@@ -82,6 +82,11 @@ body {
         width: 2px; }
         body nav .navbar .hide:hover {
           background: none; }
+    body nav .burger {
+      color: #fff;
+      float: right;
+      font-size: 24px;
+      display: none; }
   body #hero {
     background: url("../images/cover.jpeg");
     background-size: cover;
@@ -177,8 +182,9 @@ body {
     font-size: 38px;
     font-weight: bold; }
   body .about_me {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-areas: "a b";
+    grid-template-columns: 35% 65%;
     height: 50%;
     width: 95%;
     margin: 0 auto;
@@ -186,16 +192,18 @@ body {
     margin-bottom: 70px;
     margin-top: -20px; }
     body .about_me .photo {
-      width: 30%;
-      float: left;
+      grid-area: a;
+      float: right;
       margin-top: 10px;
-      margin-right: 50px;
-      margin-left: 30px; }
+      margin-left: 50px;
+      width: 100%; }
       body .about_me .photo img {
         border-radius: 5px;
-        width: 90%; }
+        width: 70%; }
     body .about_me .description {
-      width: 55%; }
+      grid-area: b;
+      width: 100%;
+      margin-right: 30px; }
   body .blogTitle h1 {
     margin-left: 80px;
     margin-bottom: 50px;
@@ -280,19 +288,24 @@ body {
           color: #000; }
           body .blog .contents ul a:hover {
             font-weight: bold; }
-    body .blog .older {
+  body .arrows {
+    width: 200%; }
+    body .arrows .older {
       float: left;
-      padding-left: 70px;
+      display: inline-block;
+      margin-bottom: 30px;
       width: 100px; }
-      body .blog .older button {
+      body .arrows .older button {
         border-radius: 20px;
         border: 1px solid #ccc;
         background: #fff;
         left: 50px; }
-    body .blog .newer {
+    body .arrows .newer {
       float: right;
-      margin-left: -115px; }
-      body .blog .newer button {
+      padding-right: 48px;
+      display: inline-block;
+      margin-bottom: 30px; }
+      body .arrows .newer button {
         border-radius: 20px;
         border: 1px solid #ccc;
         background: #fff;
@@ -338,8 +351,6 @@ body {
         body .recipes .recipe .singleRecipe img {
           width: 100%;
           border-radius: 5px; }
-        body .recipes .recipe .singleRecipe:hover {
-          width: 23%; }
     body .recipes .contents {
       grid-area: b;
       margin-right: 70px;
@@ -358,19 +369,24 @@ body {
           color: #000; }
           body .recipes .contents ul a:hover {
             font-weight: bold; }
-    body .recipes .older {
+  body .arrows {
+    width: 200%; }
+    body .arrows .older {
       float: left;
-      padding-left: 70px;
+      display: inline-block;
+      margin-bottom: 30px;
       width: 100px; }
-      body .recipes .older button {
+      body .arrows .older button {
         border-radius: 20px;
         border: 1px solid #ccc;
         background: #fff;
         left: 50px; }
-    body .recipes .newer {
+    body .arrows .newer {
       float: right;
-      margin-left: -115px; }
-      body .recipes .newer button {
+      padding-right: 48px;
+      display: inline-block;
+      margin-bottom: 30px; }
+      body .arrows .newer button {
         border-radius: 20px;
         border: 1px solid #ccc;
         background: #fff;
@@ -426,15 +442,47 @@ body {
           font-size: 22px;
           padding-right: 20px; }
 
+@media only screen and (min-width: 1154px) {
+  .singleRecipe:hover {
+    width: 23% !important; } }
 @media only screen and (max-width: 1270px) {
   .recipeCaption p {
     font-size: 14px !important;
     top: -103px !important; } }
+@media only screen and (max-width: 900px) {
+  .recipes {
+    display: flex !important;
+    flex-wrap: wrap !important; }
+    .recipes .content {
+      margin: 0 auto; }
+
+  .blog {
+    display: flex !important;
+    flex-wrap: wrap !important; }
+    .blog .content {
+      margin: 0 auto; } }
+@media only screen and (max-width: 1076px) {
+  .blogPosts .summarry h2 {
+    font-size: 18px !important;
+    padding-bottom: 10px; } }
 @media only screen and (max-width: 888px) {
   .contacts {
     display: flex !important;
     flex-wrap: wrap !important; }
     .contacts .likeMe {
+      margin: 0 auto; }
+
+  .about_me {
+    display: flex !important;
+    flex-wrap: wrap !important; }
+    .about_me .description {
       margin: 0 auto; } }
+@media only screen and (max-width: 750px) {
+  .burger {
+    display: inline-block !important;
+    margin-right: 50px !important; }
+
+  .navbar {
+    display: none; } }
 
 /*# sourceMappingURL=food.css.map */
