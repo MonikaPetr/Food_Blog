@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacts</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <link rel="stylesheet" href="./Css/food.css">
+</head>
+<body>
+     <nav>
+        <div class="brand">
+            <a href="food.html"><i class="fa fa-cutlery" aria-hidden="true"></i></a>
+        </div>
+        <div class="navbar">
+            <div class="bars"><a href="about_me.html">About Me</a></div>
+            <div class="bars"><a href="BlogPosts.html">BlogPosts</a></div>
+            <div class="bars"><a href="recipes.html">Recipes</a></div>
+            <div class="bars"><a href="contact.html">Contacts</a></div>
+            <div class="inputBar" id="inputSpace"><input type="text" name="search" placeholder="Your search"></div>
+            <div class="inputBar" id="navSearch"><button type="button" name="button" onclick="hideInput()">X</button></div>
+            <div class="bars search" id="startSearch"><a href="#" onclick="showInput()"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+        </div>
+    </nav>
+    <div class="contactTitle">
+        <h1>Contact Me</h1>
+    </div>
+    <div class="contacts">
+
+            <div class="writeMe">
+                <form>
+                    <label for="name">Your Name:</label> <br/>
+                    <input type="text" id="name"> <br/>
+                    
+                    <label for="email">Your Email:</label> <br/>
+                    <input type="email" id="email"/> <br/>
+
+                    <label for="number">Your Number:</label> <br/>
+                    <input type="number" id="number"/> <br/>
+
+                    <label for="message">Your Message:</label> <br/>
+                    <textarea rows="7" cols="60" id="message"></textarea> <br/>
+                    <button type="button">Submit</button>
+                </form>
+        </div>
+
+        
+        <div class="likeMe">
+            <a href="https://www.facebook.com/"><i class="fa fa-linkedin" aria-hidden="true"></i>Like me on Facebook</a>   
+            <a href="linkedin.com/in/monikavoloseviciute/"><i class="fa fa-facebook fb" aria-hidden="true"></i>Follow me on LinkedIn</a>
+            <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i>Read me on Twitter</a>
+        </div>
+
+    </div>
+    
+<footer>
+        <p>Copyright © Monika Petroniene 2017</p>
+    </footer>
+    
+</body>
+<script type="text/javascript" src="./js/food.js"></script>
+</html>

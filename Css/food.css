@@ -171,93 +171,141 @@ body {
     z-index: 100; }
     body footer p {
       padding-right: 50px; }
-  body .about_me {
-    height: 600px;
-    width: 1300px;
-    margin: 0 auto;
-    padding: 10px 30px;
-    margin-top: 30px;
-    margin-bottom: 70px; }
-    body .about_me .profile {
-      margin-top: 50px; }
-      body .about_me .profile .photo {
-        float: left;
-        width: 400px;
-        height: 500px;
-        overflow: hidden;
-        margin-right: 30px;
-        margin-left: 30px;
-        border-radius: 3px;
-        border: 3px solid #918f8f;
-        background: url("https://images.unsplash.com/photo-1485043433441-db091a258e5a?dpr=1&auto=format&fit=crop&w=1868&h=&q=60&cs=tinysrgb&crop=");
-        background-repeat: no-repeat;
-        background-size: cover; }
-      body .about_me .profile .description {
-        margin-right: 30px; }
-  body .blog h1 {
+  body .aboutTitle h1 {
     margin-left: 80px;
     margin-bottom: 50px;
-    font-size: 38px; }
-  body .posts {
+    font-size: 38px;
+    font-weight: bold; }
+  body .about_me {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 90px; }
-    body .posts .blogPosts {
-      width: 600px;
-      height: 550px;
-      margin: 0 auto;
-      padding: 0px 10px;
-      margin-bottom: 20px; }
-      body .posts .blogPosts img {
-        width: 600px;
-        height: 400px;
-        z-index: 98;
-        -webkit-border-top-left-radius: 5px;
-        -webkit-border-top-right-radius: 5px;
-        -moz-border-radius-topleft: 5px;
-        -moz-border-radius-topright: 5px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px; }
-      body .posts .blogPosts .summarry {
-        font-size: 14px;
-        position: relative;
-        width: 100%;
-        height: 35%;
-        z-index: 99;
-        top: -100px;
-        vertical-align: middle;
-        background: rgba(104, 103, 103, 0.7);
-        -webkit-border-bottom-right-radius: 5px;
-        -webkit-border-bottom-left-radius: 5px;
-        -moz-border-radius-bottomright: 5px;
-        -moz-border-radius-bottomleft: 5px;
-        border-bottom-right-radius: 5px;
-        border-bottom-left-radius: 5px; }
-        body .posts .blogPosts .summarry p {
+    height: 50%;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 30px;
+    margin-bottom: 70px;
+    margin-top: -20px; }
+    body .about_me .photo {
+      width: 30%;
+      float: left;
+      margin-top: 10px;
+      margin-right: 50px;
+      margin-left: 30px; }
+      body .about_me .photo img {
+        border-radius: 5px;
+        width: 90%; }
+    body .about_me .description {
+      width: 55%; }
+  body .blogTitle h1 {
+    margin-left: 80px;
+    margin-bottom: 50px;
+    font-size: 38px;
+    font-weight: bold; }
+  body .blog {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: "a b";
+    margin-bottom: 50px; }
+    body .blog .posts {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0px 90px;
+      grid-area: a;
+      margin-left: 50px;
+      width: 95%; }
+      body .blog .posts .blogPosts {
+        width: 46%;
+        margin: 0 auto;
+        padding: 0px 10px;
+        margin-bottom: -80px; }
+        body .blog .posts .blogPosts img {
+          width: 100%;
+          height: 100%;
+          z-index: 98;
+          -webkit-border-top-left-radius: 5px;
+          -webkit-border-top-right-radius: 5px;
+          -moz-border-radius-topleft: 5px;
+          -moz-border-radius-topright: 5px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px; }
+        body .blog .posts .blogPosts .summarry {
           font-size: 14px;
-          font-weight: bold;
-          color: #ccccce;
-          padding: 30px 30px;
-          text-align: left; }
-        body .posts .blogPosts .summarry h2 {
-          font-size: 26px;
-          padding-left: 30px;
-          padding-top: 25px;
-          color: #fff; }
-        body .posts .blogPosts .summarry a {
-          font-size: 14px;
-          font-weight: bold;
-          color: #515151;
-          text-decoration: none; }
+          position: relative;
+          width: 100%;
+          z-index: 99;
+          top: -100px;
+          vertical-align: middle;
+          background: rgba(104, 103, 103, 0.4);
+          -webkit-border-bottom-right-radius: 5px;
+          -webkit-border-bottom-left-radius: 5px;
+          -moz-border-radius-bottomright: 5px;
+          -moz-border-radius-bottomleft: 5px;
+          border-bottom-right-radius: 5px;
+          border-bottom-left-radius: 5px; }
+          body .blog .posts .blogPosts .summarry p {
+            font-weight: bold;
+            color: #f0f0f0;
+            padding: 5% 7%;
+            text-align: left; }
+          body .blog .posts .blogPosts .summarry h2 {
+            font-size: 24px;
+            padding-left: 30px;
+            padding-top: 25px;
+            color: #fff; }
+          body .blog .posts .blogPosts .summarry a {
+            font-size: 14px;
+            font-weight: bold;
+            color: #515151;
+            text-decoration: none; }
+    body .blog .contents {
+      grid-area: b;
+      margin-right: 70px;
+      margin-left: 30px; }
+      body .blog .contents p {
+        font-size: 24px;
+        margin-top: -5px; }
+      body .blog .contents ul {
+        font-size: 18px;
+        list-style-type: none;
+        padding-bottom: 10px; }
+        body .blog .contents ul li {
+          padding-bottom: 10px;
+          margin-left: -30px; }
+          body .blog .contents ul li .month {
+            margin-left: 10px;
+            font-size: 16px;
+            padding-top: 10px; }
+        body .blog .contents ul a {
+          text-decoration: none;
+          color: #000; }
+          body .blog .contents ul a:hover {
+            font-weight: bold; }
+    body .blog .older {
+      float: left;
+      padding-left: 70px;
+      width: 100px; }
+      body .blog .older button {
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        background: #fff;
+        left: 50px; }
+    body .blog .newer {
+      float: right;
+      margin-left: -115px; }
+      body .blog .newer button {
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        background: #fff;
+        left: 50px; }
   body .recTitle h1 {
     margin-left: 80px;
     margin-bottom: 50px;
-    font-size: 38px; }
+    font-size: 38px;
+    font-weight: bold; }
   body .recipes {
     display: grid;
-    grid-template-columns: 1200px 300px;
-    /* three columns  */
     grid-template-areas: "a b";
+    grid-template-columns: 80% 20%;
     margin-bottom: 50px; }
     body .recipes .recipe {
       grid-area: a;
@@ -265,30 +313,33 @@ body {
       display: flex;
       flex-wrap: wrap; }
       body .recipes .recipe .singleRecipe {
-        width: 250px;
-        height: 250px;
-        overflow: hidden;
         margin-right: 30px;
-        margin-bottom: 30px;
-        z-index: 98;
-        position: relative; }
+        height: 280px;
+        z-index: 96; }
         body .recipes .recipe .singleRecipe .recipeHover {
-          background: rgba(104, 103, 103, 0.7);
-          width: 260px;
-          height: 260px;
-          color: #fff;
-          font-size: 14px;
+          top: -67px;
+          width: 100%;
           z-index: 99;
-          position: absolute;
-          text-align: center;
-          line-height: 250px; }
-        body .recipes .recipe .singleRecipe:hover {
-          background-color: rgba(104, 103, 103, 0.7);
-          width: 260px;
-          height: 260px;
-          z-index: 99; }
+          position: relative;
+          height: 16%;
+          background: rgba(104, 103, 103, 0.8);
+          -webkit-border-bottom-right-radius: 5px;
+          -webkit-border-bottom-left-radius: 5px;
+          -moz-border-radius-bottomright: 5px;
+          -moz-border-radius-bottomleft: 5px;
+          border-bottom-right-radius: 5px;
+          border-bottom-left-radius: 5px; }
+          body .recipes .recipe .singleRecipe .recipeHover p {
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            padding-top: 10px; }
         body .recipes .recipe .singleRecipe img {
-          width: 100%; }
+          width: 100%;
+          border-radius: 5px; }
+        body .recipes .recipe .singleRecipe:hover {
+          width: 23%; }
     body .recipes .contents {
       grid-area: b;
       margin-right: 70px;
@@ -307,5 +358,83 @@ body {
           color: #000; }
           body .recipes .contents ul a:hover {
             font-weight: bold; }
+    body .recipes .older {
+      float: left;
+      padding-left: 70px;
+      width: 100px; }
+      body .recipes .older button {
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        background: #fff;
+        left: 50px; }
+    body .recipes .newer {
+      float: right;
+      margin-left: -115px; }
+      body .recipes .newer button {
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        background: #fff;
+        left: 50px; }
+  body .contactTitle h1 {
+    margin-left: 80px;
+    margin-bottom: 50px;
+    font-size: 38px;
+    font-weight: bold; }
+  body .contacts {
+    display: grid;
+    grid-template-areas: "a b";
+    grid-template-columns: 70% 30%; }
+    body .contacts .writeMe {
+      grid-area: a;
+      padding-left: 80px;
+      float: right;
+      margin-bottom: 50px;
+      width: 80%; }
+      body .contacts .writeMe label {
+        font-size: 20px; }
+      body .contacts .writeMe input {
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      body .contacts .writeMe textarea {
+        margin-top: 10px;
+        width: 100%; }
+      body .contacts .writeMe button {
+        width: 101%;
+        border: 1px solid #ccc;
+        background: #49c157;
+        font-size: 20px;
+        text-align: center;
+        height: 40px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        color: #fff;
+        border-radius: 3px;
+        box-sizing: border-box; }
+    body .contacts .likeMe {
+      grid-area: b;
+      padding: 40px 30px; }
+      body .contacts .likeMe a {
+        display: block;
+        text-decoration: none;
+        padding-bottom: 30px;
+        color: #000; }
+        body .contacts .likeMe a .fb {
+          padding-right: 25px; }
+        body .contacts .likeMe a i {
+          font-size: 22px;
+          padding-right: 20px; }
+
+@media only screen and (max-width: 1270px) {
+  .recipeCaption p {
+    font-size: 14px !important;
+    top: -103px !important; } }
+@media only screen and (max-width: 888px) {
+  .contacts {
+    display: flex !important;
+    flex-wrap: wrap !important; }
+    .contacts .likeMe {
+      margin: 0 auto; } }
 
 /*# sourceMappingURL=food.css.map */
